@@ -1,0 +1,9 @@
+<h2>My PortFolio</h2>
+
+<i class="fas fa-clock"></i>
+
+<ul class="stocks">
+  <li *ngFor="let stock of stocks" (click)="onStockClick(stock)">
+    <span class="badge"> <i class="fas fa-clock"></i> {{stock.symbol}}</span> {{stock.name}} <i class="fas fa-clock"></i>
+  </li>
+</ul>

@@ -1,0 +1,13 @@
+Please follow the below steps to run the django-server and angular-server locally
+
+How to Run
+    BackEnd - (Python, pip) - Prerequisites
+    1. After unzipping the contents create a python 3 virtual env using 'virtualenv -p python3 <venv>'
+    2. cd <venv>
+    3. source bin/activate
+    4. Install the requirements from requirements.txt using pip intsall -r requirements.txt
+    5. Locate the manage.py file and launch the django server using 'python manage.py runserver'
+
+    FrontEnd - (npm and ng) - Prerequisites
+    1. locate the angular app and run 'npm install' to install dependencies
+    2. run 'ng serve --opn'
