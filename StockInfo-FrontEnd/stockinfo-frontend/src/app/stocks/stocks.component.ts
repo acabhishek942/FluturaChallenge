@@ -3,6 +3,8 @@ import { Stock } from '../interfaces/stock';
 import { StocksService } from '../services/stocks.service';
 import { StockDetailService } from '../services/stock-details.service';
 
+
+
 @Component({
   selector: 'app-stocks',
   templateUrl: './stocks.component.html',

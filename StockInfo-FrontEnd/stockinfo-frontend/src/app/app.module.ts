@@ -7,6 +7,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppComponent } from './app.component';
 import { StocksComponent } from './stocks/stocks.component';
 
+import {TableModule} from 'primeng/table';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { StocksComponent } from './stocks/stocks.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

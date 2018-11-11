@@ -25,6 +25,8 @@
     "angular-font-awesome": "^3.1.2",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
+    "primeicons": "^1.0.0",
+    "primeng": "^6.1.6",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
@@ -48,5 +50,10 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
-  }
+  },
+  "styles": [
+    "node_modules/primeicons/primeicons.css",
+    "node_modules/primeng/resources/themes/nova-light/theme.css",
+    "node_modules/primeng/resources/primeng.min.css"
+  ]
 }
