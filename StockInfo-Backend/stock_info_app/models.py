@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.cache import cache
 
 from rest_framework.reverse import reverse as api_reverse
 
@@ -14,3 +15,7 @@ class Stock(models.Model):
 
     def get_api_url(self, request=None):
         return api_reverse("api-stocks:list-stocks", kwargs={'symbol':self.symbol}, request=request)
+
+    def save(self, *args, **kwargs):
+        super(Stock, self).save(*args, **kwargs)
+        cache.delete() #add params here

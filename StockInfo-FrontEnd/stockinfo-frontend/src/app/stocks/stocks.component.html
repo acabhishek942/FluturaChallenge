@@ -5,9 +5,10 @@
 <p-table [value]="stocks">
     <ng-template pTemplate="header">
         <tr>
-            <th>Symbol </th>
-            <th>Opening Price</th>
-            <th>Closing Price</th>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Opening Price(Yesterday)</th>
+            <th>Closing Price(Yesterday)</th>
             <th>Sector</th>
             <th>Market Capital</th>
             <th>Industry</th>
@@ -16,6 +17,7 @@
     <ng-template pTemplate="body" let-stock>
       <tr>
           <td>{{stock.symbol}}</td>
+          <td>{{stock.name}}</td>
           <td>{{stock.opening_price}}</td>
           <td>{{stock.closing_price}}</td>
           <td>{{stock.sector}}</td>
